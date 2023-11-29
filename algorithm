@@ -1,0 +1,19 @@
+semaphore: Chopstick -> S
+when philosopher grab the Chopstick -> excute operation wait() or P(S)
+when philosopher release the Chopstick -> excute operation signal() or V(S)
+
+we're gonna use array of Chopstick -> Chopstick[5]
+variable i will be initialized 0 -> 4
+below this text you will find explination what will philosopher do
+when he want to eat or leave
+
+do
+{
+if Chopstick is available
+	wait(Chopstick[i])
+	wait(Chopstick[(i + 1) % 5])
+	// start eating
+	signal(Chopstick[i])
+	signal(Chopstick[(i + 1) % 5])
+	//leave
+} while(true)
