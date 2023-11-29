@@ -17,3 +17,22 @@ if Chopstick is available
 	signal(Chopstick[(i + 1) % 5])
 	//leave
 } while(true)
+
+As i explained in the file README.md the problem the philosopher
+will use two Chopstick the one on his left and right hand
+so that's why we see two wait() and two signal operation.
+
+so if P0 enter while use Chopstick[0] and Chopstick[1] right??
+it sounds confusing we can say that we can just use i++ let
+me tell you are wrong.
+
+the simple reason why:
+in the best case P0 enter no problem if we use i++
+but let see our worse case is P4
+if the philosopher P4 enter he need to have Chopstick C4 and C0
+so if we do i++ he will have access to the Chopstick C6 which is
+not the case of our problem so to let philosopher P4 have
+access to Chopstick C0 we did the operation [(i + 1) % 5]
+we say i goes from 0 to 4
+so [(4 + 1) % 5] = 0
+
