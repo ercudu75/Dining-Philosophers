@@ -18,13 +18,14 @@ if Chopstick is available
 	//leave
 } while(true)
 
-As i explained in the file README.md the problem the philosopher
+As i explained in the file README.md the problem is that philosopher
 will use two Chopstick the one on his left and right hand
-so that's why we see two wait() and two signal operation.
+so that's why we see two wait() and two signal() operation.
 
 so if P0 enter while use Chopstick[0] and Chopstick[1] right??
-it sounds confusing we can say that we can just use i++ let
-me tell you are wrong.
+it sounds confusing that we use the operation 
+(i + 1) % 5 we can say that we can just use to incremnet i++ 
+let me tell you are wrong.
 
 the simple reason why:
 in the best case P0 enter no problem if we use i++
