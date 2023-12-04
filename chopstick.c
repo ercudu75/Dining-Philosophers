@@ -1,6 +1,6 @@
 #include "phil.h"
 
-
+/* Function to let a philosopher take chopsticks */
 void take_chopstick(int i)
 {
 	if (i % 2 == 0)

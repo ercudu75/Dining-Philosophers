@@ -15,7 +15,7 @@ int main(void)
 		num = malloc(sizeof(int));
 		*num = i;
 		pthread_create(&id_philospher[i], NULL, philosopher, num);
-		sleep(1);
+		sleep(2);
 	}
 
 	for (i = 0; i < N; i++)
