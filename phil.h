@@ -7,9 +7,12 @@
 #include<pthread.h>
 #include<semaphore.h>
 
+#define N 5
+sem_t chopstick[N];
+
 void *philosopher(void *num);
-void take_chopstick(int);
-void put_chopstick(int);
+void take_chopstick(int i);
+void put_chopstick(int i);
 
 
 
