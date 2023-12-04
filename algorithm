@@ -10,12 +10,13 @@ when he want to eat or leave
 do
 {
 if Chopstick is available
+	//enter the room
 	wait(Chopstick[i])
 	wait(Chopstick[(i + 1) % 5])
 	// start eating
 	signal(Chopstick[i])
 	signal(Chopstick[(i + 1) % 5])
-	//leave
+	//thinking
 } while(true)
 
 As i explained in the file README.md the problem is that philosopher
