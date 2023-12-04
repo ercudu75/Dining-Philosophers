@@ -1,5 +1,4 @@
 #include "phil.h"
-/* N: define number of philosophers*/
 
 
 int main(void)

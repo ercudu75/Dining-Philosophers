@@ -8,6 +8,7 @@
 #include<semaphore.h>
 
 #define N 5
+/* N: define number of philosophers*/
 sem_t chopstick[N];
 
 void *philosopher(void *num);
