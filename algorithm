@@ -12,10 +12,11 @@ do
 if Chopstick is available
 	//enter the room
 	// maybe the philosopher start thinking immediately if he's not hungry
+	// philosopher is hungry
 	wait(Chopstick[i])
 	wait(Chopstick[(i + 1) % 5])
-	// philosopher is hungry
 	// start eating
+	// other philosopher is hungry
 	signal(Chopstick[i])
 	signal(Chopstick[(i + 1) % 5])
 	//thinking
