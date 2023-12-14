@@ -10,9 +10,12 @@ when he want to eat or leave
 do
 {
 	//enter the room
+	// maybe the philosopher start thinking immediately if he's not hungry
+	// philosopher is hungry
 	wait(Chopstick[i])
 	wait(Chopstick[(i + 1) % 5])
 	// start eating
+	// other philosopher is hungry
 	signal(Chopstick[i])
 	signal(Chopstick[(i + 1) % 5])
 	//thinking
