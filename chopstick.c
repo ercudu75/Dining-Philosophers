@@ -18,10 +18,12 @@ void take_chopstick(int i)
 	printf("Philosopher %d is eating\n", i);
 }
 
-
+/* Function to let a philosopher put down chopsticks */
 void put_chopstick(int i)
 {
+	/*put down the left chopstick*/
 	sem_post(&chopstick[i]);
+	/*put down the right chopstick*/
 	sem_post(&chopstick[(i + 1) % N]);
 	printf("Philosopher %d has finished eating\n", i);
 }

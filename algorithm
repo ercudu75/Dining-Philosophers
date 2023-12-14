@@ -9,7 +9,6 @@ when he want to eat or leave
 
 do
 {
-if Chopstick is available
 	//enter the room
 	wait(Chopstick[i])
 	wait(Chopstick[(i + 1) % 5])
